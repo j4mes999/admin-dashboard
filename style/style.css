@@ -13,9 +13,31 @@
 .sidebar{
     display: grid;
     grid-row: 1 / 3;
+    background-color: #2563eb;
 }
 
 .main-content{
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+.dashboard-icon{
+    width: 30px;
+}
+
+.button-item{
+    background: transparent;
+    border: solid 2px transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dashboard-item .icon-text{
+    padding-left: 20px;
+} 
+
+/* Hovering selectors */
+.button-item:hover{
+    background: rgb(184, 183, 178);    
 }
