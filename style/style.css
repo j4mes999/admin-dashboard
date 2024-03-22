@@ -6,23 +6,23 @@
 
 :root{
     --blue-main-color: #5bc9d4;
-    --hover-background: #01122d;
+    --hover-background: #a0beee;
     --sharky-font: "mona_sharkregular";
     --jakarta-font: "plus_jakarta_sansregular";
 }
 
 @font-face {
     font-family: 'mona_sharkregular';
-    src: url('/media/fonts/mona_shark-webfont.woff2') format('woff2'),
-         url('/media/fonts/mona_shark-webfont.woff2') format('woff');
+    src: url('/fonts/mona_shark-webfont.woff2') format('woff2'),
+         url('/fonts/mona_shark-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'plus_jakarta_sansregular';
-    src: url('/media/fonts/plusjakartasans-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/media/fonts/plusjakartasans-variablefont_wght-webfont.woff') format('woff');
+    src: url('/fonts/plusjakartasans-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/fonts/plusjakartasans-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -85,6 +85,15 @@
 .main-group .icon-text,
 .sub-group .icon-text{
     font: 1rem var(--jakarta-font);
+}
+
+.search-bar{
+    padding: 10px 20px;
+    outline: none;
+    border: 2.3px solid #E5E7EB;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 0.5rem;
 }
 
 
