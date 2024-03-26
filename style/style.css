@@ -7,6 +7,7 @@
 :root{
     --blue-main-color: #5bc9d4;
     --hover-background: #a0beee;
+    --complementary-color: #E8B17D;
     --sharky-font: "mona_sharkregular";
     --jakarta-font: "plus_jakarta_sansregular";
 }
@@ -21,8 +22,8 @@
 
 @font-face {
     font-family: 'plus_jakarta_sansregular';
-    src: url('/fonts/plusjakartasans-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/fonts/plusjakartasans-variablefont_wght-webfont.woff') format('woff');
+    src: url('fonts/plusjakartasans-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/plusjakartasans-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -134,11 +135,24 @@ button{
 }
 
 .project-card{
-    background-color: #a0beee;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    box-shadow: inset 0.2em 0 0 var(--complementary-color), 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
 }
 
 .projects-grid{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1.3fr));
+    gap: 1rem;
+}
+
+.project-card > .icons{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
     gap: 1rem;
 }
 
